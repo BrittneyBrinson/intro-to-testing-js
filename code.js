@@ -8,3 +8,8 @@ function sayHello (x){
     return "Hello, " + x + "!"
 }
 
+function isFive (x){
+    if (x === true || x === false && x == 5)
+        return true
+
+}

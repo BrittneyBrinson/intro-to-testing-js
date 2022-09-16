@@ -31,8 +31,20 @@ describe('sayHello', function() {
     });
     it('should return the string "Hello, World!" when called', function () {
         expect(sayHello("World")).toBe("Hello, World!");
-        expect (sayHello(true)).toBe("Hello, World!");
-        expect (sayHello(false)).toBe("Hello, World!");
+        expect(sayHello(true)).toBe("Hello, World!");
+        expect(sayHello(false)).toBe("Hello, World!");
     });
+    });
+ describe('isFive', function () {
+     it('should be a defined function', function () {
+         expect(typeof isFive).toBe('function');
+     });
+     it('should return a boolean when called', function () {
+         expect(isFive(true)).toBe(true);
+         expect(isFive(false)).toBe(false);
+         expect(isFive(5)).toBe(true);
+     });
+ });
 
-});
+
+
